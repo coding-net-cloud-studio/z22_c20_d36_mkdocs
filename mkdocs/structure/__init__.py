@@ -11,7 +11,8 @@ class StructureItem(metaclass=abc.ABCMeta):
     """An item in MkDocs structure - see concrete subclasses Section, Page or Link."""
 
     @abc.abstractmethod
-    def __init__(self): ...
+    def __init__(self):
+        ...
 
     parent: Section | None = None
     """The immediate parent of the item in the site navigation. `None` if it's at the top level."""
